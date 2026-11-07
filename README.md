@@ -1,6 +1,6 @@
 # DataFlow downloads
 
-**[DataFlow](https://letdataflow.com) is a desktop app that checks field survey data while the team is still in the field.** It pulls interviews from SurveyLoopr, SurveyCTO or ODK Central (or a CSV or Excel export from any tool, KoboToolbox included), runs data-quality checks on every sync, and gives one ranked list of problems, each with a fix to approve. Keep your collection platform; DataFlow adds the quality layer on top of it.
+**[DataFlow](https://letdataflow.com) is a desktop app that checks field survey data while the team is still in the field.** It pulls interviews from SurveyLoopr, SurveyCTO, ODK Central or KoboToolbox (or a CSV or Excel export from any tool), runs data-quality checks on every sync, and gives one ranked list of problems, each with a fix to approve. Keep your collection platform; DataFlow adds the quality layer on top of it.
 
 This repository holds DataFlow's installers, checksums and update files. The app is made by [ARCED International](https://arced-international.com).
 
@@ -18,10 +18,12 @@ Start with the sample study: 600 interviews with real-looking problems, free and
 
 ## What DataFlow checks
 
-- Duplicate IDs, interview length, outliers, allowed ranges and missing answers
-- "Don't know" and refusal rates, and "other, specify" answers that belong to an existing option
-- Logic rules written like XLSForm conditions, and answer pairs that can't go together
-- Interview location from GPS, back-checks, and statistical signs of made-up interviews for each enumerator
+- [Duplicate IDs](https://letdataflow.com/checks/duplicates), [interview length](https://letdataflow.com/checks/interview-duration), [outliers](https://letdataflow.com/checks/outliers), [allowed ranges](https://letdataflow.com/checks/range-checks) and [missing answers](https://letdataflow.com/checks/missing-answers)
+- ["Don't know" and refusal rates](https://letdataflow.com/checks/dont-know-and-refusals), and ["other, specify" answers](https://letdataflow.com/checks/other-specify) that belong to an existing option
+- [Logic rules](https://letdataflow.com/checks/logic-checks) written like XLSForm conditions, and answer pairs that can't go together
+- [Interview location from GPS](https://letdataflow.com/checks/gps-checks), [back-checks](https://letdataflow.com/checks/back-checks), and [statistical signs of made-up interviews](https://letdataflow.com/checks/fabricated-interviews) for each enumerator
+
+Every check is explained in the [guide to high-frequency checks](https://letdataflow.com/checks) and the openly licensed [Field Data Quality Standard](https://letdataflow.com/standard).
 
 DataFlow suggests the checks from your form and data. Raw submissions are never changed: every correction is logged, can be undone, and exports as a Stata do-file that rebuilds the clean data from the raw data. Survey data stays on your computer, encrypted, and the local AI works offline. See [features](https://letdataflow.com/features), [integrations](https://letdataflow.com/integrations) and [security and privacy](https://letdataflow.com/security).
 
